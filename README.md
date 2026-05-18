@@ -219,11 +219,11 @@ docker compose up -d
 
 The producer fetches weather data every 10 seconds and sends it to Confluent Cloud Kafka topic `weather_data`. The consumer listens to the topic and saves each message to PostgreSQL in real time.
 Producer Output
-![Kafka Producer Streaming](images/kafka_streaming.png)
+![Kafka Producer Streaming]
 <img width="1137" height="668" alt="image" src="https://github.com/user-attachments/assets/966a6a13-9e08-4710-8390-eac774ab2871" />
 
 Confluent Cloud Topic
-![Confluent Cloud Topic](images/kafka_topic.png)
+![Confluent Cloud Topic]
 <img width="1350" height="572" alt="image" src="https://github.com/user-attachments/assets/bee20762-4939-41e0-bf56-75928ee88f50" />
 
 ---
@@ -238,7 +238,7 @@ Password: admin
 ```
 
 Full Dashboard Overview
-![Grafana Dashboard](images/grafana_dashboard.png)
+![Grafana Dashboard]
 <img width="1311" height="666" alt="image" src="https://github.com/user-attachments/assets/f49f6429-380a-4d6f-b5c7-3b628765d945" />
 <img width="1314" height="663" alt="image" src="https://github.com/user-attachments/assets/bc10b482-09d8-44f6-b97d-89922ab02487" />
 
