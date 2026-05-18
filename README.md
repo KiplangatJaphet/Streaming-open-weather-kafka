@@ -290,15 +290,18 @@ ORDER BY temp ASC;
 ---
 
 Apache Airflow
+
 Access Airflow at `http://localhost:8080`
 DAG Overview
-![Airflow Tasks](images/airflow_tasks.png)
+
 <img width="1365" height="614" alt="image" src="https://github.com/user-attachments/assets/e9addc90-b8ae-47d1-8495-cdfae244bf50" />
 
 DAG: weather_streaming_pipeline
+
 Schedule: Every 10 minutes (`*/10 * * * *`)
-Owner: kiplangat
+
 Tags: confluent, kafka, weather
+
 Tasks:
 `start_producer` — Starts the weather data producer
 `start_consumer` — Starts the Kafka consumer
