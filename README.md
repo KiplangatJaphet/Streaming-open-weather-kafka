@@ -91,14 +91,6 @@ Streaming-open-weather-kafka/
 │   └── consumer_weather_data.py
 ├── dags/
 │   └── weather_pipeline_dag.py
-├── images/
-│   ├── kafka_streaming.png
-│   ├── kafka_topic.png
-│   ├── grafana_dashboard.png
-│   ├── grafana_temperature.png
-│   ├── grafana_humidity.png
-│   ├── airflow_dag.png
-│   └── airflow_tasks.png
 ├── docker-compose.yml
 ├── .gitignore
 └── README.md
