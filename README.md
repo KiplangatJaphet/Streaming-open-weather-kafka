@@ -60,13 +60,21 @@ Confluent Cloud	Managed Kafka broker
 Python 3.12	Producer & Consumer
 
 kafka-python	Kafka client library
+
 PostgreSQL 18	Data storage
+
 psycopg2	PostgreSQL Python adapter
+
 Grafana	Real-time visualization
+
 Apache Airflow	Pipeline orchestration
+
 Docker	Containerization
+
 Docker Compose	Multi-container management
+
 OpenWeatherMap API	Weather data source
+
 DBeaver	Database management
 ---
 
@@ -99,13 +107,21 @@ Streaming-open-weather-kafka/
 **Prerequisites**
 
 Before running this project, make sure you have:
+
 Python 3.12+
+
 Confluent Cloud account — free tier at confluent.io
+
 OpenWeatherMap API key — free at openweathermap.org
+
 PostgreSQL 18
+
 Grafana
+
 Apache Airflow
+
 Docker & Docker Compose
+
 ---
 
 
