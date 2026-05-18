@@ -1,11 +1,15 @@
-🌤️ Streaming Open Weather Kafka
-**A production-grade, end-to-end real-time data streaming pipeline that fetches live weather data from 13 cities across Kenya, East Africa, and the world. The pipeline streams data through Apache Kafka on Confluent Cloud, stores it in PostgreSQL, visualizes it in Grafana, orchestrates it with Apache Airflow, and is fully containerized with Docker.**
+**Streaming Open Weather Kafka**
+
+A production-grade, end-to-end real-time data streaming pipeline that fetches live weather data from 13 cities across Kenya, East Africa, and the world. The pipeline streams data through Apache Kafka on Confluent Cloud, stores it in PostgreSQL, visualizes it in Grafana, orchestrates it with Apache Airflow, and is fully containerized with Docker.
 ---
 
 
-📖 Project Overview
-**This project builds a real-time weather data streaming pipeline using modern data engineering tools. Weather data is fetched from the OpenWeatherMap API every 10 seconds and streamed through Confluent Cloud (managed Apache Kafka). A consumer reads the messages and stores them in a PostgreSQL database. The data is visualized in real-time using Grafana dashboards, orchestrated by Apache Airflow, and the entire pipeline is containerized using Docker.**
+**Project Overview**
+
+This project builds a real-time weather data streaming pipeline using modern data engineering tools. Weather data is fetched from the OpenWeatherMap API every 10 seconds and streamed through Confluent Cloud (managed Apache Kafka). A consumer reads the messages and stores them in a PostgreSQL database. The data is visualized in real-time using Grafana dashboards, orchestrated by Apache Airflow, and the entire pipeline is containerized using Docker.
 ---
+
+
 🏗️ Architecture
 ```
 ┌─────────────────────────────────────────────────────────────────┐
@@ -42,7 +46,9 @@
 └─────────────────────────────────────────────────────────────────┘
 ```
 ---
-🛠️ Technologies Used
+
+**Technologies Used**
+
 Technology	Purpose
 Apache Kafka	Message streaming
 Confluent Cloud	Managed Kafka broker
@@ -57,7 +63,9 @@ Docker Compose	Multi-container management
 OpenWeatherMap API	Weather data source
 DBeaver	Database management
 ---
-📁 Project Structure
+
+
+📁 **Project Structure**
 ```
 Streaming-open-weather-kafka/
 ├── producer/
@@ -81,7 +89,9 @@ Streaming-open-weather-kafka/
 └── README.md
 ```
 ---
-✅ Prerequisites
+
+**Prerequisites**
+
 Before running this project, make sure you have:
 Python 3.12+
 Confluent Cloud account — free tier at confluent.io
@@ -91,7 +101,9 @@ Grafana
 Apache Airflow
 Docker & Docker Compose
 ---
-⚙️ Installation & Setup
+
+
+⚙️ **Installation & Setup**
 1. Clone the repository
 ```bash
 git clone https://github.com/KiplangatJaphet/Streaming-open-weather-kafka.git
@@ -152,8 +164,10 @@ conn = psycopg2.connect(
 )
 ```
 ---
-▶️ Running the Pipeline
-Start PostgreSQL
+
+** Running the Pipeline
+
+**Start PostgreSQL
 ```bash
 sudo pg_ctlcluster 18 main start
 ```
@@ -184,7 +198,10 @@ sudo service docker start
 docker compose up -d
 ```
 ---
-📡 Kafka Streaming
+
+** Kafka Streaming
+**
+
 The producer fetches weather data every 10 seconds and sends it to Confluent Cloud Kafka topic `weather_data`. The consumer listens to the topic and saves each message to PostgreSQL in real time.
 Producer Output
 ![Kafka Producer Streaming](images/kafka_streaming.png)
@@ -195,19 +212,23 @@ Confluent Cloud Topic
 <img width="1350" height="572" alt="image" src="https://github.com/user-attachments/assets/bee20762-4939-41e0-bf56-75928ee88f50" />
 
 ---
-📊 Grafana Dashboard
+
+**Grafana Dashboard
+**
 Access Grafana at `http://localhost:3000`
 Default credentials:
 ```
 Username: admin
 Password: admin
 ```
+
 Full Dashboard Overview
 ![Grafana Dashboard](images/grafana_dashboard.png)
 <img width="1311" height="666" alt="image" src="https://github.com/user-attachments/assets/f49f6429-380a-4d6f-b5c7-3b628765d945" />
 <img width="1314" height="663" alt="image" src="https://github.com/user-attachments/assets/bc10b482-09d8-44f6-b97d-89922ab02487" />
 
 Dashboard Panels
+
 Panel	Type	Description
 Temperature by City	Time series	Live temperature trends
 Humidity by City	Time series	Live humidity trends
@@ -275,7 +296,10 @@ Tasks:
 `start_consumer` — Starts the Kafka consumer
 
 ---
-🐳 Docker Deployment
+
+**Docker Deployment
+**
+
 Build and run all containers
 ```bash
 docker compose up --build -d
@@ -308,7 +332,9 @@ Username: admin
 Password: admin123
 ```
 ---
-🌍 Cities Tracked
+
+** Cities Tracked
+** 
 Region	Cities
 Kenya	Nairobi, Nakuru, Eldoret, Mombasa, Kisumu
 East Africa	Dodoma, Kampala, Kigali, Dar es Salaam
