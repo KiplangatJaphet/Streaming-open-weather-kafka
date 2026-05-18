@@ -182,7 +182,8 @@ conn = psycopg2.connect(
 
 ** Running the Pipeline
 
-**Start PostgreSQL
+Start PostgreSQL
+
 ```bash
 sudo pg_ctlcluster 18 main start
 ```
@@ -228,7 +229,7 @@ Confluent Cloud Topic
 
 ---
 
-**Grafana Dashboard
+****Grafana Dashboard**
 **
 Access Grafana at `http://localhost:3000`
 Default credentials:
@@ -244,16 +245,18 @@ Full Dashboard Overview
 
 Dashboard Panels
 
-Panel	Type	Description
-Temperature by City	Time series	Live temperature trends
-Humidity by City	Time series	Live humidity trends
-Current Weather by City	Table	Latest weather per city
-Hottest Cities Right Now	Bar chart	Top hot cities
-Weather Conditions Distribution	Pie chart	Clouds/Rain/Clear breakdown
-Average Temperature per City	Bar chart	Average temps comparison
-Total Weather Records	Stat	Total records collected
-Coldest Cities Right Now	Bar chart	Top cold cities
+Panel	
+Temperature by City	
+Humidity by City	
+Current Weather by City	Table	
+Hottest Cities Right Now	
+Weather Conditions Distribution	
+Average Temperature per City	
+Total Weather Records	Stat	
+Coldest Cities Right Now	
+
 Sample Queries
+
 Temperature by City:
 ```sql
 SELECT created_at AS time, city, temp
@@ -296,7 +299,8 @@ GROUP BY city
 ORDER BY temp ASC;
 ```
 ---
-🔄 Apache Airflow
+
+Apache Airflow
 Access Airflow at `http://localhost:8080`
 DAG Overview
 ![Airflow Tasks](images/airflow_tasks.png)
