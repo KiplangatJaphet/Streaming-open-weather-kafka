@@ -244,6 +244,7 @@ Full Dashboard Overview
 <img width="1314" height="663" alt="image" src="https://github.com/user-attachments/assets/bc10b482-09d8-44f6-b97d-89922ab02487" />
 	
 
+
 Sample Queries
 
 Temperature by City:
