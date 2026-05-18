@@ -1,24 +1,10 @@
 🌤️ Streaming Open Weather Kafka
-A production-grade, end-to-end real-time data streaming pipeline that fetches live weather data from 13 cities across Kenya, East Africa, and the world. The pipeline streams data through Apache Kafka on Confluent Cloud, stores it in PostgreSQL, visualizes it in Grafana, orchestrates it with Apache Airflow, and is fully containerized with Docker.
+**A production-grade, end-to-end real-time data streaming pipeline that fetches live weather data from 13 cities across Kenya, East Africa, and the world. The pipeline streams data through Apache Kafka on Confluent Cloud, stores it in PostgreSQL, visualizes it in Grafana, orchestrates it with Apache Airflow, and is fully containerized with Docker.**
 ---
-📌 Table of Contents
-Project Overview
-Architecture
-Technologies Used
-Project Structure
-Prerequisites
-Installation & Setup
-Running the Pipeline
-Kafka Streaming
-Grafana Dashboard
-Apache Airflow
-Docker Deployment
-Cities Tracked
-Database Schema
-Author
----
+
+
 📖 Project Overview
-This project builds a real-time weather data streaming pipeline using modern data engineering tools. Weather data is fetched from the OpenWeatherMap API every 10 seconds and streamed through Confluent Cloud (managed Apache Kafka). A consumer reads the messages and stores them in a PostgreSQL database. The data is visualized in real-time using Grafana dashboards, orchestrated by Apache Airflow, and the entire pipeline is containerized using Docker.
+**This project builds a real-time weather data streaming pipeline using modern data engineering tools. Weather data is fetched from the OpenWeatherMap API every 10 seconds and streamed through Confluent Cloud (managed Apache Kafka). A consumer reads the messages and stores them in a PostgreSQL database. The data is visualized in real-time using Grafana dashboards, orchestrated by Apache Airflow, and the entire pipeline is containerized using Docker.**
 ---
 🏗️ Architecture
 ```
@@ -202,10 +188,12 @@ docker compose up -d
 The producer fetches weather data every 10 seconds and sends it to Confluent Cloud Kafka topic `weather_data`. The consumer listens to the topic and saves each message to PostgreSQL in real time.
 Producer Output
 ![Kafka Producer Streaming](images/kafka_streaming.png)
-> *Add a screenshot of your terminal showing the producer sending data e.g. `Sent: {'city': 'Nairobi', 'temp': 20.93 ...}`*
+<img width="1137" height="668" alt="image" src="https://github.com/user-attachments/assets/966a6a13-9e08-4710-8390-eac774ab2871" />
+
 Confluent Cloud Topic
 ![Confluent Cloud Topic](images/kafka_topic.png)
-> *Add a screenshot of your Confluent Cloud dashboard showing the weather_data topic with messages flowing in*
+<img width="1350" height="572" alt="image" src="https://github.com/user-attachments/assets/bee20762-4939-41e0-bf56-75928ee88f50" />
+
 ---
 📊 Grafana Dashboard
 Access Grafana at `http://localhost:3000`
@@ -216,13 +204,9 @@ Password: admin
 ```
 Full Dashboard Overview
 ![Grafana Dashboard](images/grafana_dashboard.png)
-> *Add a screenshot of your full Grafana dashboard showing all 8 panels*
-Temperature by City
-![Temperature by City](images/grafana_temperature.png)
-> *Add a screenshot of the Temperature by City time series panel*
-Humidity by City
-![Humidity by City](images/grafana_humidity.png)
-> *Add a screenshot of the Humidity by City time series panel*
+<img width="1311" height="666" alt="image" src="https://github.com/user-attachments/assets/f49f6429-380a-4d6f-b5c7-3b628765d945" />
+<img width="1314" height="663" alt="image" src="https://github.com/user-attachments/assets/bc10b482-09d8-44f6-b97d-89922ab02487" />
+
 Dashboard Panels
 Panel	Type	Description
 Temperature by City	Time series	Live temperature trends
@@ -279,11 +263,9 @@ ORDER BY temp ASC;
 🔄 Apache Airflow
 Access Airflow at `http://localhost:8080`
 DAG Overview
-![Airflow DAG](images/airflow_dag.png)
-> *Add a screenshot of your Airflow UI showing the weather_streaming_pipeline DAG*
-Task Details
 ![Airflow Tasks](images/airflow_tasks.png)
-> *Add a screenshot showing the start_producer and start_consumer tasks both successful (green)*
+<img width="1365" height="614" alt="image" src="https://github.com/user-attachments/assets/e9addc90-b8ae-47d1-8495-cdfae244bf50" />
+
 DAG: weather_streaming_pipeline
 Schedule: Every 10 minutes (`*/10 * * * *`)
 Owner: kiplangat
@@ -291,10 +273,7 @@ Tags: confluent, kafka, weather
 Tasks:
 `start_producer` — Starts the weather data producer
 `start_consumer` — Starts the Kafka consumer
-DAG Location
-```
-dags/weather_pipeline_dag.py
-```
+
 ---
 🐳 Docker Deployment
 Build and run all containers
@@ -346,7 +325,7 @@ CREATE TABLE weather_data (
     timestamp   BIGINT,
     created_at  TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
-```
+**```
 Column	Type	Description
 id	SERIAL	Auto-increment primary key
 city	VARCHAR	City name
@@ -354,15 +333,6 @@ temp	FLOAT	Temperature in °C
 humidity	INT	Humidity percentage
 condition	VARCHAR	Weather condition (Rain/Clouds/Clear)
 timestamp	BIGINT	Unix timestamp from API
-created_at	TIMESTAMP	Record creation time
+created_at	TIMESTAMP	Record creation time**
 ---
-👤 Author
-Kiplangat Japhet
-GitHub: @KiplangatJaphet
-Location: Nairobi, Kenya
-Email: kiplangatjaphet3@gmail.com
----
-📄 License
-This project is open source and available under the MIT License.
----
-> Built with ❤️ using Apache Kafka, Confluent Cloud, PostgreSQL, Grafana, Airflow, and Docker.
+
