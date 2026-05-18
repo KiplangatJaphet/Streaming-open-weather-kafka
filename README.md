@@ -1,7 +1,7 @@
-**Streaming Open Weather Kafka**
+Streaming Open Weather Kafka
 
-A production-grade, end-to-end real-time data streaming pipeline that fetches live weather data from 13 cities across Kenya, East Africa, and the world. The pipeline streams data through Apache Kafka on Confluent Cloud, stores it in PostgreSQL, visualizes it in Grafana, orchestrates it with Apache Airflow, and is fully containerized with Docker.
----
+**A production-grade, end-to-end real-time data streaming pipeline that fetches live weather data from 13 cities across Kenya, East Africa, and the world. The pipeline streams data through Apache Kafka on Confluent Cloud, stores it in PostgreSQL, visualizes it in Grafana, orchestrates it with Apache Airflow, and is fully containerized with Docker.
+**---
 
 
 **Project Overview**
