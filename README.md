@@ -7,6 +7,7 @@ A production-grade, end-to-end real-time data streaming pipeline that fetches li
 **Project Overview**
 
 This project builds a real-time weather data streaming pipeline using modern data engineering tools. Weather data is fetched from the OpenWeatherMap API every 10 seconds and streamed through Confluent Cloud (managed Apache Kafka). A consumer reads the messages and stores them in a PostgreSQL database. The data is visualized in real-time using Grafana dashboards, orchestrated by Apache Airflow, and the entire pipeline is containerized using Docker.
+
 ---
 
 
