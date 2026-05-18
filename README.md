@@ -53,29 +53,30 @@ This project builds a real-time weather data streaming pipeline using modern dat
 
 Technology	Purpose
 
-Apache Kafka	Message streaming
+Apache Kafka -	Message streaming
 
-Confluent Cloud	Managed Kafka broker
+Confluent Cloud	- Managed Kafka broker
 
-Python 3.12	Producer & Consumer
+Python 3.12	- Producer & Consumer
 
-kafka-python	Kafka client library
+kafka-python	- Kafka client library
 
-PostgreSQL 18	Data storage
+PostgreSQL 18	- Data storage
 
-psycopg2	PostgreSQL Python adapter
+psycopg2	- PostgreSQL Python adapter
 
-Grafana	Real-time visualization
+Grafana	Real - time visualization
 
-Apache Airflow	Pipeline orchestration
+Apache Airflow	- Pipeline orchestration
 
-Docker	Containerization
+Docker	- Containerization
 
-Docker Compose	Multi-container management
+Docker Compose	- Multi-container management
 
-OpenWeatherMap API	Weather data source
+OpenWeatherMap API -	Weather data source
 
-DBeaver	Database management
+DBeaver	- Database management
+
 ---
 
 
