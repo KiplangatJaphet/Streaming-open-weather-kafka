@@ -52,9 +52,13 @@ This project builds a real-time weather data streaming pipeline using modern dat
 **Technologies Used**
 
 Technology	Purpose
+
 Apache Kafka	Message streaming
+
 Confluent Cloud	Managed Kafka broker
+
 Python 3.12	Producer & Consumer
+
 kafka-python	Kafka client library
 PostgreSQL 18	Data storage
 psycopg2	PostgreSQL Python adapter
