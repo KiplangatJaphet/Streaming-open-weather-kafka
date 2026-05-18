@@ -293,6 +293,7 @@ ORDER BY temp ASC;
 Apache Airflow
 
 Access Airflow at `http://localhost:8080`
+
 DAG Overview
 
 <img width="1365" height="614" alt="image" src="https://github.com/user-attachments/assets/e9addc90-b8ae-47d1-8495-cdfae244bf50" />
