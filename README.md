@@ -215,8 +215,8 @@ docker compose up -d
 ```
 ---
 
-** Kafka Streaming
-**
+Kafka Streaming
+
 
 The producer fetches weather data every 10 seconds and sends it to Confluent Cloud Kafka topic `weather_data`. The consumer listens to the topic and saves each message to PostgreSQL in real time.
 
@@ -229,8 +229,8 @@ Confluent Cloud Topic
 
 ---
 
-****Grafana Dashboard**
-**
+**Grafana Dashboard**
+
 Access Grafana at `http://localhost:3000`
 Default credentials:
 ```
