@@ -238,7 +238,7 @@ Password: admin
 ```
 
 Full Dashboard Overview
-![Grafana Dashboard]
+
 <img width="1311" height="666" alt="image" src="https://github.com/user-attachments/assets/f49f6429-380a-4d6f-b5c7-3b628765d945" />
 <img width="1314" height="663" alt="image" src="https://github.com/user-attachments/assets/bc10b482-09d8-44f6-b97d-89922ab02487" />
 
