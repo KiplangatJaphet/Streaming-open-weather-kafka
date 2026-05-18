@@ -11,7 +11,8 @@ This project builds a real-time weather data streaming pipeline using modern dat
 ---
 
 
-🏗️ Architecture
+
+**Architecture**
 ```
 ┌─────────────────────────────────────────────────────────────────┐
 │                  WEATHER STREAMING PIPELINE                     │
