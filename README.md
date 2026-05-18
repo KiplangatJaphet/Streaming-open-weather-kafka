@@ -310,19 +310,14 @@ Tasks:
 
 ---
 
-**Docker Deployment
-**
+Docker Deployment
+
 
 Build and run all containers
 ```bash
 docker compose up --build -d
 ```
-Docker services
-Container	Image	Port	Purpose
-weather_producer	Custom	-	Fetches & sends weather data
-weather_consumer	Custom	-	Receives & saves to PostgreSQL
-weather_postgres	postgres:15	5432	PostgreSQL database
-weather_grafana	grafana/grafana	3001	Grafana dashboard
+
 Check running containers
 ```bash
 docker ps
@@ -346,13 +341,6 @@ Password: admin123
 ```
 ---
 
-** Cities Tracked
-** 
-Region	Cities
-Kenya	Nairobi, Nakuru, Eldoret, Mombasa, Kisumu
-East Africa	Dodoma, Kampala, Kigali, Dar es Salaam
-World	London, New York, Tokyo, Dubai
----
 🗄️ Database Schema
 ```sql
 CREATE TABLE weather_data (
